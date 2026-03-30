@@ -217,7 +217,7 @@
       <div class="hero-word">운영</div>
       <div class="hero-word">현장</div>
     </div>
-    <div class="hero-contact">📱 010-9421-1843 &nbsp;|&nbsp; ✉ sherrychin@naver.com</div>
+
   </div>
 </section>
 
@@ -452,7 +452,7 @@
       </div>
       <div class="contact-item">
         <div class="contact-icon">✉️</div>
-        <div class="contact-val">sherrychin@naver.com</div>
+        <div class="contact-val"><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="d4a7bcb1a6a6adb7bcbdba94bab5a2b1a6fab7bbb9">[email&#160;protected]</a></div>
       </div>
       <div class="contact-footer-text">행사기획 · 운영 전문 | 2008년~ 현재 활동 중</div>
     </div>
@@ -468,22 +468,11 @@
   © 2026 커스텀바이진 (Custom by Chin). All rights reserved.
 </footer>
 
-<script>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
   const words = document.querySelectorAll('.hero-word');
   let current = 0;
   setInterval(() => {
     words[current].classList.remove('active');
     current = (current + 1) % words.length;
     words[current].classList.add('active');
-  }, 1800);
-
-  const reveals = document.querySelectorAll('.reveal');
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach(e => {
-      if (e.isIntersecting) { e.target.classList.add('visible'); observer.unobserve(e.target); }
-    });
-  }, { threshold: 0.12 });
-  reveals.forEach(el => observer.observe(el));
-</script>
-</body>
-</html>
+  }, 1
